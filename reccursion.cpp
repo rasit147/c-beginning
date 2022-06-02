@@ -78,16 +78,15 @@ int main() {
 int main(){
     print_pattern(9); 
     return 0; 
-}*/
+}
+
 int fib(int n){
-    if (n==1)
-    {
+    if (n==0)
+    return 0;
+    if(n==1)
         return 0;
-    }
     if (n==2)
-    {
        return 1;
-    }
     return fib(n-1)+fib(n-2);
 }
 
@@ -96,3 +95,17 @@ int main(){
     cin>>n;
     cout<<fib(n);
 }
+// reverse string importan question.....
+void reverse(string s){
+    if(s.length()==0){
+        return ;
+    }
+    string ros=s.substr(1);
+    reverse(ros);
+    cout<<s[0];
+}
+int main(){
+    reverse("binod");
+
+}*/
+
